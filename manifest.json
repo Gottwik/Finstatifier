@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+
+	"name": "Finstatifier",
+	"description": "This extension converts ICO slovak company identifier into links to finstat.sk",
+	"version": "1.0",
+	"content_scripts": [
+		{
+		"matches": ["<all_urls>"],
+		"js": ["script.js"],
+		"run_at": "document_start"
+		}
+	],
+	"permissions": [
+		"activeTab"
+	]
+}
